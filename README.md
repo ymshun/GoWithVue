@@ -2,6 +2,8 @@
 
 <img width="450" src="https://user-images.githubusercontent.com/52367439/82271681-6fac9b00-99b3-11ea-83bf-2bd437117cdc.gif" />
 
+Qiita: [Go + Vue.js でGETとPOSTをやってみる](https://qiita.com/YS-BETA/items/e57446ffa4269376e699)
+
 ## Project setup
 ```
 npm install
