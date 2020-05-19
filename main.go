@@ -3,18 +3,18 @@ package main
 import (
 	"net/http"
 	"github.com/labstack/echo"
-  	// "github.com/labstack/echo/middleware"
+  	"github.com/labstack/echo/middleware"
 )
 
 func main(){
 	e := echo.New()
 
 	//CORSの設定(vueのプロジェクトをGOで立てたlocalサーバーで起動する時は不要)
-	// e.Use(middleware.CORS())
+	e.Use(middleware.CORS())
 
 	// npm run buildでビルドしたものをgoで起動  corsも不要になる
 	//  /でアクセスしたときのルーティング設定
-	e.Static("/", "dist/")
+	// e.Static("/", "dist/")
 
 	// リクエストに対するHandler
 	e.GET("/getTitle", getTitle)
